@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>smallest</title>
+        <meta charset="utf-8" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/csss" href="/theme/css/home.css"/>
+
+
+
+
+</head>
+
+<body id="index" class="home">
+        <nav id="menu"><ul>
+            <li><a href="index.html">smallest'home</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+        <article class="hentry">
+                <aside class="post-info">
+                    <time class="post-date" datetime="2013年09月20日">
+                    <span class="post-month"> 9月</span>
+                    <strong class="post-day">20</strong>
+                    <span class="post-year">2013</span>
+                    </time>
+                </aside><!-- /.post-info -->
+                <section class="entry-body">
+  <header>
+    <h2 class="entry-title">
+      <a href="./tips-of-vim.html" rel="bookmark"
+         title="Permalink to Tips of vim">Tips of vim</a></h2>
+ 
+  </header>
+  <div class="entry-content">
+    <h3>跳转</h3>
+<ul>
+<li><code>0</code>跳转至行首</li>
+<li><code>^</code>跳转至行第一个非空字符</li>
+<li><code>$</code>跳转至行尾</li>
+<li><code>mx</code>设置书签,x只能是a-z的26个字母,<code>`x</code>跳转到书签处<code>`</code>是左边的键</li>
+<li><code>%</code>跳转到相配对的括号</li>
+<li><code>Ctrl-O</code>跳转到表里较旧的光标位置</li>
+<li><code>Ctrl-I</code>跳转到表里较新的光标位置</li>
+<li><code>''</code>跳转到光标上次停靠的地方,是两个<code>'</code>,而不是一个<code>"</code></li>
+<li><code>{</code>到上一段的开头</li>
+<li><code>}</code>跳到下一段的的开头</li>
+<li><code>(</code>移到这个句子的开头</li>
+<li><code>)</code>移到下一个句子的开头</li>
+<li><code>[[</code>跳转至上一个函数要求代码块中<code>{</code>必须单独占一行</li>
+<li><code>]]</code> 跳转至下一个函数要求代码块中<code>{</code>必须单独占一行</li>
+<li><code>Ctrl-]</code>跳转至函数或变量定义处</li>
+<li><code>gD</code>跳转到局部变量的定义处</li>
+</ul>
+<h3>编辑多个文件</h3>
+<p>vim file1 file2 ..
+* <code>nw</code>保存当前文件编辑下一个</p>
+<h3>Problems</h3>
+  </div><!-- /.entry-content -->
+    </section>
+</article>
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
