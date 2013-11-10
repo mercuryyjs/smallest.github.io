@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <title>smallest</title>
         <meta charset="utf-8" />
-        <!--add by me-->
-        <link rel="stylesheet" type="text/csss" href="/theme/css/home.css"/>
+        <title>python抓取fm.douban的加心歌曲</title>
+        <link rel="stylesheet" href="n/theme/css/main.css" />
+        <link href="n/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="smallest Atom Feed" />
 
-
-
-
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
 <body id="index" class="home">
-        <nav id="menu"><ul>
-            <li><a href="index.html">smallest'home</a></li>
-            <li><a href="archives.html">archives</a></li>
-            <li><a href="about.html">about</a></li>
-        </ul></nav><!-- /#menu -->
+        <header id="banner" class="body">
+                <h1><a href="n/">smallest </a></h1>
+                <nav><ul>
+                    <li><a href="index.html">smallest'home</a></li>
+                    <li><a href="archives.html">archives</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li class="active"><a href="n/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 <section id="content" class="body">
-        <article class="hentry">
-                <aside class="post-info">
-                    <time class="post-date" datetime="2013年09月20日">
-                    <span class="post-month"> 9月</span>
-                    <strong class="post-day">20</strong>
-                    <span class="post-year">2013</span>
-                    </time>
-                </aside><!-- /.post-info -->
-                <section class="entry-body">
-  <header>
-    <h2 class="entry-title">
-      <a href="./pythonzhua-qu-fmdoubande-jia-xin-ge-qu.html" rel="bookmark"
-         title="Permalink to python抓取fm.douban的加心歌曲">python抓取fm.douban的加心歌曲</a></h2>
- 
-  </header>
-  <div class="entry-content">
-    <p>对python的大名早有耳闻，是一种比较流行的脚本语言，python和ruby差不多是一个时候听说的，感觉它们的关系可能就跟vim和Emacs一样。那时候也是觉得自己的工程实践太少了，后来了解到豆瓣网站就主要是python写的。豆瓣是自己比较喜欢的网站，界面简洁、内容有营养、熟悉而又不失新鲜感。于是迫不及待地想系统地学习这门语言，借了《python简明教程》,粗略地看了一遍。参考了[welken博客]（http://www.wklken.me/) 的一些总结还有一个好玩的网站<a href="http://www.pythonchallenge.com/">python challenge</a>,那会主要时候看了别人写的答案，自己都不会，只是尝试这样一种游戏的学习方式多了解一些知识。暑假看了<a href="http://djangobook.py3k.cn/2.0/">the Djangobook</a>，原理和核心思想自己还是没掌握，需要再去细致阅读和理解。</p>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="n/pythonzhua-qu-fmdoubande-jia-xin-ge-qu.html" rel="bookmark"
+           title="Permalink to python抓取fm.douban的加心歌曲">python抓取fm.douban的加心歌曲</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-09-20T00:00:00">
+                五 20 九月 2013
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="n/author/smallest.html">smallest</a>
+        </address>
+<p>In <a href="n/category/misc.html">misc</a>. </p>
+
+</footer><!-- /.post-info -->      <p>对python的大名早有耳闻，是一种比较流行的脚本语言，python和ruby差不多是一个时候听说的，感觉它们的关系可能就跟vim和Emacs一样。那时候也是觉得自己的工程实践太少了，后来了解到豆瓣网站就主要是python写的。豆瓣是自己比较喜欢的网站，界面简洁、内容有营养、熟悉而又不失新鲜感。于是迫不及待地想系统地学习这门语言，借了《python简明教程》,粗略地看了一遍。参考了[welken博客]（http://www.wklken.me/) 的一些总结还有一个好玩的网站<a href="http://www.pythonchallenge.com/">python challenge</a>,那会主要时候看了别人写的答案，自己都不会，只是尝试这样一种游戏的学习方式多了解一些知识。暑假看了<a href="http://djangobook.py3k.cn/2.0/">the Djangobook</a>，原理和核心思想自己还是没掌握，需要再去细致阅读和理解。</p>
 <p>还了解到python用于网页抓取比较方便,了<a href="http://blog.csdn.net/sding/article/details/6214207">爬虫抓站的基本技巧</a>，有些还是技巧不太理解，可能是对www的通信机制还不太了解。当初照着别人写的登录网站的方法登录了睿思，就光获取了一下登录后的页面，其他什么也没干。仅此而已自己就觉得很神奇，竟然可以脱离浏览器用脚本登录网站，这种上网的体验从未有过。</p>
 <p>学校晚上熄灯早，有时候没网，这时无聊的时候自己想听听歌，由于自己习惯了在douban.fm上听歌，就想着把豆瓣中自己加心的歌曲下载下来。自己网站与浏览器的通信规则还不了解，就在github搜了别人写的相关的代码。有一个还是比较符合我的需求，<a href="https://github.com/isnowfy/download_doubanfm">download_doubanfm</a>。</p>
 <h3>参考前人的代码：</h3>
@@ -62,15 +68,39 @@
 </li>
 </ol>
 <p>state:unfinished</p>
-  </div><!-- /.entry-content -->
-    </section>
-</article>
+    </div><!-- /.entry-content -->
+
+  </article>
 </section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="n/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="http://github.com/smallest">github</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
+
 </body>
 </html>
