@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>python-wiki</title>
+        <title>deploy a static blog on github page by pelican</title>
         <link rel="stylesheet" href="n/theme/css/main.css" />
         <link href="n/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="smallest Atom Feed" />
 
@@ -25,14 +25,14 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="n/python-wiki.html" rel="bookmark"
-           title="Permalink to python-wiki">python-wiki</a></h1>
+        <a href="n/deploy-a-static-blog-on-github-page-by-pelican.html" rel="bookmark"
+           title="Permalink to deploy a static blog on github page by pelican">deploy a static blog on github page by pelican</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2013-10-19T00:00:00">
-                六 19 十月 2013
+        <abbr class="published" title="2013-11-10T00:00:00">
+                日 10 十一月 2013
         </abbr>
 
         <address class="vcard author">
@@ -40,13 +40,21 @@
         </address>
 <p>In <a href="n/category/misc.html">misc</a>. </p>
 
-</footer><!-- /.post-info -->      <h3>语法</h3>
+</footer><!-- /.post-info -->      <h3>Why use pelican and github</h3>
 <ul>
-<li>函数修饰符@<ul>
-<li><a href="http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html">Python装饰器与面向切面编程</a> </li>
-<li><a href="http://www.python.org/dev/peps/pep-0318/">PEP 318 -- Decorators for Functions and Methods</a></li>
+<li>github provides github pages </li>
+<li>pelican can transform md to html </li>
+<li>md is easy to use and peform well</li>
+<li>create theme yourself</li>
 </ul>
-</li>
+<h3>pelican create static site</h3>
+<ul>
+<li>pelican-quickstart</li>
+<li>pelican content -o output -t template</li>
+<li>cd output;python -m pelican.server</li>
+<li>or you can edit Makefile and use make to simplify such command as above two</li>
+<li>ghp-import output;git push git@github.com:smallest/smallest.github.io.git gh-pages 
+ 其中遇到了一个问题，查了好几个小时，在第二步中，会在output中生成对应的.git文件夹，第五步的时候上传不了，提示不能上传引用。把其中的.git文件夹删除后，就成功上传了，不知道什么导致了这样的问题，不会是要每次生成output文件夹后去删除.git后再提交吧？自动生成.git文件夹的用处又是什么呢？</li>
 </ul>
     </div><!-- /.entry-content -->
 
