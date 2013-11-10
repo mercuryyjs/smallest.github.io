@@ -1,0 +1,90 @@
+#menu li{
+font:150% Helvetica,Arial,sans-serif;
+display:inline;
+margin-left:30px;
+}
+#menu{
+color:rgb(33, 34, 36);
+background-color:rgb(237, 244, 237);
+padding-top:20px;
+padding-bottom:20px;
+}
+#menu a:link,#menu a:visited{
+color:rgb(0, 119, 34);
+}
+
+a{
+text-decoration:none;
+}
+
+body,ul,li,a{
+border:0px;
+margin:0px;
+}
+
+ul{
+list-style:none;
+}
+#post-list .hentry{
+padding-bottom:30px;
+margin-bottom:30px;
+border-bottom:1px solid rgb(229, 229, 229);
+}
+body{
+width:70%;
+margin:auto;
+}
+#contentinfo{
+border-top:1px dashed rgb(229,229,229);
+color:rgb(153,153,153);
+font-size:12px;
+padding-top:10px;
+padding-bottom:10px;
+}
+.post-info{
+float:left;
+}
+.entry-body{
+min-height:141px;
+margin-left:146px;
+}
+#content{
+margin-top: 30px;
+margin-bottom:20px;
+}
+.post-date {
+width: 56px;
+height: auto;
+text-align: center;
+margin-right: 20px;
+margin-bottom: 15px;
+background: rgb(157, 206, 223);
+text-shadow: 0px 1px rgb(129, 188, 209);
+border-radius: 80px;
+padding: 10px 30px;
+border: 4pt solid rgb(255, 255, 255);
+box-shadow: 0 0px 3px rgb(183, 183, 183);
+display:block;
+}
+.post-day{
+font-size: 36px;
+color: rgb(255, 255, 255);
+margin: 10px 0 15px 0;
+display:block;
+}
+.post-month{
+color:white;
+display:block;
+}
+.post-year{
+color:white;
+display:block;
+padding-top:10px;
+border-top:solid 1px;
+}
+body{
+font-family: sans-serif;
+color: rgb(51, 51, 51);
+line-height:20px;
+}
+

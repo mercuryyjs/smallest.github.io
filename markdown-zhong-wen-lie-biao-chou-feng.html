@@ -1,81 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+          <title>smallest</title>
         <meta charset="utf-8" />
-        <title>Markdown 中文列表抽风</title>
-        <link rel="stylesheet" href="n/theme/css/main.css" />
-        <link href="n/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="smallest Atom Feed" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/csss" href="/theme/css/home.css"/>
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
+
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="n/">smallest </a></h1>
-                <nav><ul>
-                    <li><a href="index.html">smallest'home</a></li>
-                    <li><a href="archives.html">archives</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li class="active"><a href="n/category/misc.html">misc</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="index.html">smallest'home</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="n/markdown-zhong-wen-lie-biao-chou-feng.html" rel="bookmark"
-           title="Permalink to Markdown 中文列表抽风">Markdown 中文列表抽风</a></h1>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-09-21T00:00:00">
-                六 21 九月 2013
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="n/author/smallest.html">smallest</a>
-        </address>
-<p>In <a href="n/category/misc.html">misc</a>. </p>
-
-</footer><!-- /.post-info -->      <p><a href="http://yangzetian.github.io/2012/03/28/markdown/">原文</a>
+        <article class="hentry">
+                <aside class="post-info">
+                    <time class="post-date" datetime="2013年09月21日">
+                    <span class="post-month"> 9月</span>
+                    <strong class="post-day">21</strong>
+                    <span class="post-year">2013</span>
+                    </time>
+                </aside><!-- /.post-info -->
+                <section class="entry-body">
+  <header>
+    <h2 class="entry-title">
+      <a href="./markdown-zhong-wen-lie-biao-chou-feng.html" rel="bookmark"
+         title="Permalink to Markdown 中文列表抽风">Markdown 中文列表抽风</a></h2>
+ 
+  </header>
+  <div class="entry-content">
+    <p><a href="http://yangzetian.github.io/2012/03/28/markdown/">原文</a>
 用 markdown 写带中文的列表时发现 jekyll 生成的网页中有的可以正常显示，有的则不行。折腾半天，发现如果列表项中含有英文字母等非中文字符，就可以正确显示，纯中文的那些打死也不行。</p>
 <p>上网查后得知原来是 jeklly 默认 markdown 引擎 maruku 的问题，将引擎改为 rdiscount 即可。做法是修改 _config.yml 文件，在 pygments: true 上面添加一行 markdown: rdiscount</p>
-    </div><!-- /.entry-content -->
-
-  </article>
+  </div><!-- /.entry-content -->
+    </section>
+</article>
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="n/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="http://github.com/smallest">github</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>
