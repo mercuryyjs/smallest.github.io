@@ -68,6 +68,34 @@
 <li>Installation: pip install pelican</li>
 <li>date:2013-11-08</li>
 </ul>
+<h4>mczip</h4>
+<ul>
+<li>why
+    带中文字符文件名的zip压缩包打开用unzip解压后，文件名和目录名都是乱码，gooogle一下，很多给出的是用<code>unzip -O CP639</code>这样的命令，但是现在unzip 好像没有了<code>-O</code>这个参数。还有很多是推荐用convmv 转换编码格式，不知道为什么不管用。然后在这个<a href="http://www.robberphex.com/category/develop/linux-dev">博客</a>找到了这个小软件<a href="https://github.com/RobberPhex/mczip">mczip</a></li>
+<li>Installation: /usr/local/bin/mczip</li>
+<li>date: 2013-11-30</li>
+</ul>
+<h4>texlive</h4>
+<ul>
+<li>why
+    起因是翻译矩阵论文，里面有很多公式，在linux环境下怎么高效得去编辑含有公式的文档呢，于是想到了tex，做毕业设计的时候大东就是用它写的论文。</li>
+<li>Installation: /usr/home/smallest/texlive/2013</li>
+<li>date: 2013-12-05</li>
+</ul>
+<h4>jhead</h4>
+<ul>
+<li>why
+   需要旋转图像的方位来保证其在浏览器中的正确显示.jhead可以修改文件的Exif(Exchangeable Image File,is a kind of JPEG)头部信息。 </li>
+<li>Installation:apt-get install jhead</li>
+<li>date: 2013-12-14</li>
+</ul>
+<h4>libpdf(chrome)</h4>
+<ul>
+<li>why 
+    用chromium看pdf文档，但是chromium不带这项功能，从chrome的安装包中提取libpdf放到/usr/lib/chromium</li>
+<li>Installation:ar x google-chrome-stable;tar --lzma -xvf data.tar.lzma;cp opt/google/chrome/libpdf.so /usr/lib/chromium;</li>
+<li>date: 2013-12-14</li>
+</ul>
   </div><!-- /.entry-content -->
     </section>
 </article>
@@ -77,29 +105,29 @@
         <div class=sidebarBox id=taglist>
             <h4>Tag</h4>
             <ul class="tagcloud">
-                <li class="tag-4"><a href="./tag/plugin.html">plugin</a></li>
+                <li class="tag-2"><a href="./tag/douban.html">douban</a></li>
                 <li class="tag-4"><a href="./tag/markdown.html">markdown</a></li>
-                <li class="tag-4"><a href="./tag/jekyll.html">jekyll</a></li>
-                <li class="tag-4"><a href="./tag/css.html">css</a></li>
-                <li class="tag-4"><a href="./tag/pelican.html">pelican</a></li>
+                <li class="tag-2"><a href="./tag/tips.html">tips</a></li>
+                <li class="tag-4"><a href="./tag/installation.html">Installation</a></li>
                 <li class="tag-4"><a href="./tag/interview.html">interview</a></li>
-                <li class="tag-4"><a href="./tag/bash.html">bash</a></li>
-                <li class="tag-4"><a href="./tag/regexp.html">regexp</a></li>
-                <li class="tag-1"><a href="./tag/wiki.html">wiki</a></li>
-                <li class="tag-4"><a href="./tag/chrome.html">chrome</a></li>
                 <li class="tag-4"><a href="./tag/algorithm.html">Algorithm</a></li>
-                <li class="tag-4"><a href="./tag/blog.html">blog</a></li>
-                <li class="tag-1"><a href="./tag/javascript.html">javascript</a></li>
+                <li class="tag-4"><a href="./tag/regexp.html">regexp</a></li>
+                <li class="tag-4"><a href="./tag/plugin.html">plugin</a></li>
                 <li class="tag-4"><a href="./tag/vim.html">vim</a></li>
                 <li class="tag-4"><a href="./tag/front-end.html">front-end</a></li>
-                <li class="tag-4"><a href="./tag/inux.html">inux</a></li>
-                <li class="tag-4"><a href="./tag/installation.html">Installation</a></li>
-                <li class="tag-2"><a href="./tag/douban.html">douban</a></li>
-                <li class="tag-4"><a href="./tag/study.html">study</a></li>
-                <li class="tag-2"><a href="./tag/python.html">python</a></li>
-                <li class="tag-2"><a href="./tag/tips.html">tips</a></li>
-                <li class="tag-4"><a href="./tag/local.html">local</a></li>
                 <li class="tag-4"><a href="./tag/hack.html">hack</a></li>
+                <li class="tag-4"><a href="./tag/local.html">local</a></li>
+                <li class="tag-4"><a href="./tag/blog.html">blog</a></li>
+                <li class="tag-4"><a href="./tag/chrome.html">chrome</a></li>
+                <li class="tag-2"><a href="./tag/python.html">python</a></li>
+                <li class="tag-4"><a href="./tag/jekyll.html">jekyll</a></li>
+                <li class="tag-4"><a href="./tag/pelican.html">pelican</a></li>
+                <li class="tag-4"><a href="./tag/css.html">css</a></li>
+                <li class="tag-4"><a href="./tag/bash.html">bash</a></li>
+                <li class="tag-1"><a href="./tag/javascript.html">javascript</a></li>
+                <li class="tag-4"><a href="./tag/study.html">study</a></li>
+                <li class="tag-4"><a href="./tag/inux.html">inux</a></li>
+                <li class="tag-1"><a href="./tag/wiki.html">wiki</a></li>
 </ul>
         </div>
         </aside>

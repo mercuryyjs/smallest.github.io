@@ -19,6 +19,29 @@
 <div id="post-list">
         <article class="hentry">
                 <aside class="post-info">
+                    <time class="post-date" datetime="2013年11月19日">
+                    <span class="post-month">11月</span>
+                    <strong class="post-day">19</strong>
+                    <span class="post-year">2013</span>
+                    </time>
+                </aside><!-- /.post-info -->
+                <section class="entry-body">
+                <header> <h2 class="entry-title"><a href="../ge-wang-zhan-shi-yong-de-kuang-jia-he-ji-zhu.html" rel="bookmark" title="Permalink to 各网站使用的框架和技术">各网站使用的框架和技术</a></h2> </header>
+                <div class="entry-content"> <h3>知乎</h3>
+<ul>
+<li>Tornado 知乎使用这个构建自己的网站</li>
+<li>MySQL 知乎使用这个作为自己的主要的储存，使用 SqlAlchemy 为ORM进行数据库的建模或者映射。</li>
+<li>Redis 使用这个用于缓存、队列、计数或者任务，使用 Redis-Py 为其连接客户端。</li>
+<li><a href="https://developers.google.com/closure/library/?hl=zh-CN&amp;csw=1">Closure</a> 知乎使用Google的Closure Library作为前端的JavaScript 框架，这个大家可以自行抄起家伙查看Javascript代码，或者在其Js源代码里面直接搜索goog，即可看到。</li>
+<li>Nginx 现在可以在HTTP HEADER中直接看到这个。</li>
+<li>以前用到的Upyun，现在已经迁移到知乎自己建的图片服务上。</li>
+<li>知乎的主要语言是Python，其实只要网站用到Python，很多的包或者技术都是可以预测的，比如需要 Virtualenv来解决纯净的包环境问题，需要 Pythonbrew 来切换Python的版本环境（开发环境常用，生产环境很少），需要 使用 Fabric 来加速部署。看看知乎这样的流量，肯定也会有负载均衡啦，硬的就来个牛逼的F5，软的就玩个Nginx或者HAProxy吧。</li>
+<li>参考<a href="http://www.zhihu.com/question/19558038">1</a></li>
+</ul> </div><!-- /.entry-content -->
+                </sention>
+        </article>
+        <article class="hentry">
+                <aside class="post-info">
                     <time class="post-date" datetime="2013年11月18日">
                     <span class="post-month">11月</span>
                     <strong class="post-day">18</strong>
@@ -129,7 +152,11 @@ done</p> </div><!-- /.entry-content -->
 asia.pool.ntp.org
 中科院授时中心(西安)
 210.72.145.44
-执行命令:ntpdate asia.pool.ntp.org;连接210.72.145.44时提示没有这个服务器，不知道为什么</p> </div><!-- /.entry-content -->
+执行命令:ntpdate asia.pool.ntp.org;连接210.72.145.44时提示没有这个服务器，不知道为什么</p>
+<h4>想装一个能写注释的pdf阅读软件</h4>
+<p>mupdf 只有看pdf的功能，没有其他任何功能
+xpdf 功能特别少，具丑。
+adobereader 找了半天，下了半天才下下来。没有注释功能，比较慢。要你何用。</p> </div><!-- /.entry-content -->
                 </sention>
         </article>
         <article class="hentry">
@@ -159,57 +186,49 @@ asia.pool.ntp.org
     help you change directory ...</li></ul> </div><!-- /.entry-content -->
                 </sention>
         </article>
-        <article class="hentry">
-                <aside class="post-info">
-                    <time class="post-date" datetime="2013年11月04日">
-                    <span class="post-month">11月</span>
-                    <strong class="post-day">04</strong>
-                    <span class="post-year">2013</span>
-                    </time>
-                </aside><!-- /.post-info -->
-                <section class="entry-body">
-                <header> <h2 class="entry-title"><a href="../javascript-wiki.html" rel="bookmark" title="Permalink to javascript-wiki">javascript-wiki</a></h2> </header>
-                <div class="entry-content"> <h3>syntax</h3>
-<h4>闭包</h4>
-<ul>
-<li><a href="http://coolshell.cn/articles/6731.html">理解Javascript闭包</a></li>
-</ul> </div><!-- /.entry-content -->
-                </sention>
-        </article>
 </div><!-- /#posts-list -->
-<div class="paginator">
-    Page 1 / 4
-        <a href="../category/misc2.html">&raquo;</a>
-</div>
+    <ul class="pagination">
+            <li class="prev disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a
+                    href="../category/misc.html">1</a></li>
+            <li class=""><a
+                    href="../category/misc2.html">2</a></li>
+            <li class=""><a
+                    href="../category/misc3.html">3</a></li>
+            <li class=""><a
+                    href="../category/misc4.html">4</a></li>
+            <li class="next"><a
+                    href="../category/misc2.html">&raquo;</a></li>
+    </ul>
 </section><!-- /#content -->
           <!--add by me -->
         <aside id="content-side">
         <div class=sidebarBox id=taglist>
             <h4>Tag</h4>
             <ul class="tagcloud">
-                <li class="tag-4"><a href="../tag/plugin.html">plugin</a></li>
+                <li class="tag-2"><a href="../tag/douban.html">douban</a></li>
                 <li class="tag-4"><a href="../tag/markdown.html">markdown</a></li>
-                <li class="tag-4"><a href="../tag/jekyll.html">jekyll</a></li>
-                <li class="tag-4"><a href="../tag/css.html">css</a></li>
-                <li class="tag-4"><a href="../tag/pelican.html">pelican</a></li>
+                <li class="tag-2"><a href="../tag/tips.html">tips</a></li>
+                <li class="tag-4"><a href="../tag/installation.html">Installation</a></li>
                 <li class="tag-4"><a href="../tag/interview.html">interview</a></li>
-                <li class="tag-4"><a href="../tag/bash.html">bash</a></li>
-                <li class="tag-4"><a href="../tag/regexp.html">regexp</a></li>
-                <li class="tag-1"><a href="../tag/wiki.html">wiki</a></li>
-                <li class="tag-4"><a href="../tag/chrome.html">chrome</a></li>
                 <li class="tag-4"><a href="../tag/algorithm.html">Algorithm</a></li>
-                <li class="tag-4"><a href="../tag/blog.html">blog</a></li>
-                <li class="tag-1"><a href="../tag/javascript.html">javascript</a></li>
+                <li class="tag-4"><a href="../tag/regexp.html">regexp</a></li>
+                <li class="tag-4"><a href="../tag/plugin.html">plugin</a></li>
                 <li class="tag-4"><a href="../tag/vim.html">vim</a></li>
                 <li class="tag-4"><a href="../tag/front-end.html">front-end</a></li>
-                <li class="tag-4"><a href="../tag/inux.html">inux</a></li>
-                <li class="tag-4"><a href="../tag/installation.html">Installation</a></li>
-                <li class="tag-2"><a href="../tag/douban.html">douban</a></li>
-                <li class="tag-4"><a href="../tag/study.html">study</a></li>
-                <li class="tag-2"><a href="../tag/python.html">python</a></li>
-                <li class="tag-2"><a href="../tag/tips.html">tips</a></li>
-                <li class="tag-4"><a href="../tag/local.html">local</a></li>
                 <li class="tag-4"><a href="../tag/hack.html">hack</a></li>
+                <li class="tag-4"><a href="../tag/local.html">local</a></li>
+                <li class="tag-4"><a href="../tag/blog.html">blog</a></li>
+                <li class="tag-4"><a href="../tag/chrome.html">chrome</a></li>
+                <li class="tag-2"><a href="../tag/python.html">python</a></li>
+                <li class="tag-4"><a href="../tag/jekyll.html">jekyll</a></li>
+                <li class="tag-4"><a href="../tag/pelican.html">pelican</a></li>
+                <li class="tag-4"><a href="../tag/css.html">css</a></li>
+                <li class="tag-4"><a href="../tag/bash.html">bash</a></li>
+                <li class="tag-1"><a href="../tag/javascript.html">javascript</a></li>
+                <li class="tag-4"><a href="../tag/study.html">study</a></li>
+                <li class="tag-4"><a href="../tag/inux.html">inux</a></li>
+                <li class="tag-1"><a href="../tag/wiki.html">wiki</a></li>
 </ul>
         </div>
         </aside>

@@ -8,8 +8,6 @@
 
 
 
-    <meta name="tags" contents="blog" />
-    <meta name="tags" contents="pelican" />
 
 </head>
 
@@ -23,35 +21,30 @@
 <section id="content" class="body">
         <article class="hentry">
                 <aside class="post-info">
-                    <time class="post-date" datetime="2013年11月10日">
+                    <time class="post-date" datetime="2013年11月19日">
                     <span class="post-month">11月</span>
-                    <strong class="post-day">10</strong>
+                    <strong class="post-day">19</strong>
                     <span class="post-year">2013</span>
                     </time>
                 </aside><!-- /.post-info -->
                 <section class="entry-body">
   <header>
     <h2 class="entry-title">
-      <a href="./deploy-a-static-blog-on-github-page-by-pelican.html" rel="bookmark"
-         title="Permalink to deploy a static blog on github page by pelican">deploy a static blog on github page by pelican</a></h2>
+      <a href="./ge-wang-zhan-shi-yong-de-kuang-jia-he-ji-zhu.html" rel="bookmark"
+         title="Permalink to 各网站使用的框架和技术">各网站使用的框架和技术</a></h2>
  
   </header>
   <div class="entry-content">
-    <h3>Why use pelican and github</h3>
+    <h3>知乎</h3>
 <ul>
-<li>github provides github pages </li>
-<li>pelican can transform md to html </li>
-<li>md is easy to use and peform well</li>
-<li>create theme yourself</li>
-</ul>
-<h3>pelican create static site</h3>
-<ul>
-<li>pelican-quickstart</li>
-<li>pelican content -o output -t template</li>
-<li>cd output;python -m pelican.server</li>
-<li>or you can edit Makefile and use make to simplify such command as above two</li>
-<li>ghp-import output;git push git@github.com:smallest/smallest.github.io.git gh-pages 
- 其中遇到了一个问题，查了好几个小时，在第二步中，会在output中生成对应的.git文件夹，第五步的时候上传不了，提示不能上传引用。把其中的.git文件夹删除后，就成功上传了，不知道什么导致了这样的问题，不会是要每次生成output文件夹后去删除.git后再提交吧？自动生成.git文件夹的用处又是什么呢？</li>
+<li>Tornado 知乎使用这个构建自己的网站</li>
+<li>MySQL 知乎使用这个作为自己的主要的储存，使用 SqlAlchemy 为ORM进行数据库的建模或者映射。</li>
+<li>Redis 使用这个用于缓存、队列、计数或者任务，使用 Redis-Py 为其连接客户端。</li>
+<li><a href="https://developers.google.com/closure/library/?hl=zh-CN&amp;csw=1">Closure</a> 知乎使用Google的Closure Library作为前端的JavaScript 框架，这个大家可以自行抄起家伙查看Javascript代码，或者在其Js源代码里面直接搜索goog，即可看到。</li>
+<li>Nginx 现在可以在HTTP HEADER中直接看到这个。</li>
+<li>以前用到的Upyun，现在已经迁移到知乎自己建的图片服务上。</li>
+<li>知乎的主要语言是Python，其实只要网站用到Python，很多的包或者技术都是可以预测的，比如需要 Virtualenv来解决纯净的包环境问题，需要 Pythonbrew 来切换Python的版本环境（开发环境常用，生产环境很少），需要 使用 Fabric 来加速部署。看看知乎这样的流量，肯定也会有负载均衡啦，硬的就来个牛逼的F5，软的就玩个Nginx或者HAProxy吧。</li>
+<li>参考<a href="http://www.zhihu.com/question/19558038">1</a></li>
 </ul>
   </div><!-- /.entry-content -->
     </section>

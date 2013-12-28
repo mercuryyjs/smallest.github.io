@@ -1,3 +1,4 @@
+@import url("pygment.css");
 #menu li{
 font:150% Helvetica,Arial,sans-serif;
 display:inline;
@@ -103,4 +104,55 @@ padding:15px 10px 15px 10px;
 .extra {
 clear: both;
 text-align: right;
+}
+/*images*/
+img{
+max-width:400px;
+padding: 10px;
+border: solid 1px rgb(200, 200, 200);
+margin-top: 10px;
+}
+/*code block decoration*/
+pre {
+background-color: rgb(238, 238, 238);
+padding: 10px;
+border: 1px solid rgb(204, 204, 204);
+border-radius: 4px;
+}
+/*pagination*/
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index: 2;
+color: rgb(255, 255, 255);
+cursor: default;
+background-color: rgb(66, 139, 202);
+border-color: rgb(66, 139, 202);
+}
+.pagination>li>a {
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+background-color: rgb(255, 255, 255);
+border: 1px solid rgb(221, 221, 221);
+}
+.pagination>li>a:hover {
+background-color: rgb(238, 238, 238);
+}
+.pagination>li:first-child>a {
+margin-left: 0;
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+}
+.pagination>li:last-child>a {
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+color: rgb(153, 153, 153);
+cursor: not-allowed;
+background-color: rgb(255, 255, 255);
+border-color: rgb(221, 221, 221);
+}
+.entry-content ul {
+list-style:outside disc;
+margin:0em 0 0 1.5em;
 }
