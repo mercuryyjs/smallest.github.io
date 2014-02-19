@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Aladdin</title>
+        <meta charset="utf-8" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/css" href="/theme/css/home.css"/>
+</head>
+
+<body id="index" class="home">
+        <nav id="menu"><ul>
+            <li><a href="index.html">Aladdin</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
+        <div id=content-wrap>
+<section id="content">
+<div id="post-list">
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../shell-wiki.html" rel="bookmark" title="Permalink to shell wiki">shell wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-18 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">shell|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>shell读取文件的每一行</h3>
+<h2>写法一：</h2>
+<h1>!/bin/bash</h1>
+<p>while read line
+do
+    echo $line
+done &lt; filename(待读取的文件)</p>
+<hr />
+<h2>写法二：</h2>
+<h1>!/bin/bash</h1>
+<p>cat filename(待读取的文件) | while read line
+do
+    echo $line
+done</p>
+<hr />
+<h2>写法三：</h2>
+<p>for line in <code>cat filename(待读取的文件)</code>
+do
+    echo $line
+done</p> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../linux-wiki.html" rel="bookmark" title="Permalink to Linux-wiki">Linux-wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-10 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">linux|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h4>系统时间同步</h4>
+<p>寻找一个网络时间服务器，比如一些国家授时中心
+台警大授时中心(台湾)
+asia.pool.ntp.org
+中科院授时中心(西安)
+210.72.145.44
+执行命令:ntpdate asia.pool.ntp.org;连接210.72.145.44时提示没有这个服务器，不知道为什么</p>
+<h4>想装一个能写注释的pdf阅读软件</h4>
+<p>mupdf 只有看pdf的功能，没有其他任何功能
+xpdf 功能特别少，具丑。
+adobereader 找了半天，下了半天才下下来。没有注释功能，比较慢。要你何用。</p>
+<h3>Linux练级</h3>
+<p>linux软件开发如何入门
+1. 鸟哥的私房菜基础篇。这是学习linux系统的使用。
+2. 服务器篇。可以看些简单的服务器构建：tftp,ftp,nfs ...</p> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../javascript-wiki.html" rel="bookmark" title="Permalink to javascript-wiki">javascript-wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-04 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">javascript|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>syntax</h3>
+<h4>闭包</h4>
+<ul>
+<li><a href="http://coolshell.cn/articles/6731.html">理解Javascript闭包</a></li>
+</ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../python-wiki.html" rel="bookmark" title="Permalink to python-wiki">python-wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-10-19 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">python|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>语法</h3>
+<ul>
+<li>函数修饰符@<ul>
+<li><a href="http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html">Python装饰器与面向切面编程</a> </li>
+<li><a href="http://www.python.org/dev/peps/pep-0318/">PEP 318 -- Decorators for Functions and Methods</a></li>
+</ul>
+</li>
+</ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../regexp-wiki.html" rel="bookmark" title="Permalink to "regexp wiki"">"regexp wiki"</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-10-16 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags"></span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>匹配模式</h3>
+<ul>
+<li><code>.$</code>匹配行末字符</li>
+</ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../bash-wiki.html" rel="bookmark" title="Permalink to bash wiki">bash wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-09-23 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">shell|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>Bash 快捷键</h3>
+<h4>Ctrl</h4>
+<ul>
+<li><code>ctrl-a/ctrl-e</code>
+    移动光标到行首/行尾,同<code>Home/End</code>键</li>
+<li><code>ctrl-b/ctrl-f</code>
+    后移/前移 一个字符。</li>
+<li><code>ctrl-c</code>
+    杀死当前进程。</li>
+<li><code>ctrl-d</code>
+    杀死当前Shell。</li>
+<li><code>ctrl-h</code>
+    删除左边一个字符, 同<code>Backspace</code>键</li>
+<li><code>ctrl-l</code>
+    清屏, 同clear</li>
+<li><code>ctrl-r/ctrl-R</code>
+    从之前键入过的历史命令中搜索</li>
+<li><code>ctrl-u/ctrl-k</code>
+    删除光标前/光标后的所有字符</li>
+<li><code>ctrl-y</code>
+    撤消前一次删除</li>
+<li><code>ctrl-z</code>
+    挂起当前进程,之后可以使用<code>fg</code>命令唤醒</li>
+</ul>
+<h4>Alt</h4>
+<ul>
+<li><code>Alt-b /Alt-f</code>
+    后移/前移 一个单词</li>
+<li><code>Alt-c</code>
+    把当前字符改成首字母大写 ...</li></ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="../tips-of-vim.html" rel="bookmark" title="Permalink to Tips of vim">Tips of vim</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-09-20 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">vim|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>跳转</h3>
+<ul>
+<li><code>w</code>  跳到下一个字首，按标点或单词分割</li>
+<li><code>W</code>  跳到下一个字首，长跳，如end-of-line被认为是一个</li>
+<li><code>e</code>  跳到下一个字</li>
+<li><code>E</code>  跳到下一个字尾，长跳</li>
+<li><code>b</code>  跳到上一个字</li>
+<li><code>B</code>  跳到上一个字，长跳</li>
+<li><code>0</code>跳转至行首</li>
+<li><code>^</code>跳转至行第一个非空字符</li>
+<li><code>$</code>跳转至行尾</li>
+<li><code>fx</code>在当前行中找x字符，找到了就跳转至x</li>
+<li><code>Fx</code>跟fx的方向相反</li>
+<li><code>*</code>查找光标所在处的单词，向下查找 </li>
+<li><code>*</code>查找光标所在处的单词，向上查找 </li>
+<li><code>[N]G</code>跳到第N行，如0G，就等价于gg，100G就是第100行</li>
+<li><code>ctrl-f</code>上翻一页 </li>
+<li><code>ctrl-b</code>下翻一页 </li>
+<li><code>mx</code>设置书签,x只能是a-z的26个字母,<code>`x</code>跳转到书签处<code>`</code>是左边的键</li>
+<li><code>%</code>跳转到相配对的括号</li>
+<li><code>Ctrl-O</code>跳转到表里较旧的光标位置 ...</li></ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+
+</div><!-- /#posts-list -->
+</section><!-- /#content -->
+          <!--add by me -->
+        <aside id="content-side">
+        <div class=sidebarBox id=taglist>
+            <h4>Tag</h4>
+            <ul class="tagcloud">
+                <li class="tag-4"><a href="../tag/markdown.html">markdown</a></li>
+                <li class="tag-4"><a href="../tag/algorithm.html">Algorithm</a></li>
+                <li class="tag-4"><a href="../tag/vim.html">vim</a></li>
+                <li class="tag-4"><a href="../tag/pelican.html">pelican</a></li>
+                <li class="tag-1"><a href="../tag/javascript.html">javascript</a></li>
+                <li class="tag-1"><a href="../tag/python.html">python</a></li>
+                <li class="tag-2"><a href="../tag/linux.html">linux</a></li>
+                <li class="tag-2"><a href="../tag/css.html">css</a></li>
+                <li class="tag-2"><a href="../tag/shell.html">shell</a></li>
+                <li class="tag-4"><a href="../tag/jinja.html">jinja</a></li>
+</ul>
+        </div>
+        </aside>
+    <div class="extra">
+                
+            </div>
+
+        </div>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

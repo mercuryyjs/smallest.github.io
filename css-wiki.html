@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Aladdin</title>
+        <meta charset="utf-8" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/css" href="/theme/css/home.css"/>
+
+
+
+    <meta name="tags" contents="css" />
+
+</head>
+
+<body id="index" class="home">
+        <nav id="menu"><ul>
+            <li><a href="index.html">Aladdin</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
+        <div id=content-wrap>
+<section id="content" class="body">
+        <article class="hentry">
+                <section class="entry-body">
+    <h2 class="entry-title">
+      <a href="./css-wiki.html" rel="bookmark"
+         title="Permalink to css-wiki">css-wiki</a></h2>
+ 
+                <div class="post-info">
+                    <span class="post-date">2013-10-10 00:00:00</span>
+                    <span class="post-category">misc</span>
+                    <span class="post-tags">css</span>
+                </div><!-- /.post-info -->
+  <div class="entry-content">
+    <ul>
+<li>inline-block trick involving 'font-size:0'
+The problem is that elements with display: inline-block have "extra gaps", due to being affected by whitespace in the HTML, see: http://jsfiddle.net/thirtydot/4z4v2/</li>
+</ul>
+<p>As shown, the gaps can be removed by removing the whitespace in the HTML. However, removing that whitespace is sometimes an undesirable fix: for example, it makes the HTML more difficult to work with.</p>
+<p>So, I suggested this workaround: http://jsfiddle.net/thirtydot/4z4v2/1/
+<code>ul {
+    font-size: 0;
+    letter-spacing: -1px;
+}
+li {
+    font-size: medium;
+    letter-spacing: normal;
+}</code></p>
+<h4>webkit-box</h4>
+<ul>
+<li><a href="http://www.cnblogs.com/hongru/archive/2011/10/10/2203744.html">Flexible Box Module(流体盒模型)</a></li>
+<li>作用：实现真正意义上的流体布局</li>
+</ul>
+  </div><!-- /.entry-content -->
+    </section>
+</article>
+</section>
+          <!--add by me -->
+        <aside id="content-side">
+        <div class=sidebarBox id=taglist>
+            <h4>Tag</h4>
+            <ul class="tagcloud">
+                <li class="tag-4"><a href="./tag/markdown.html">markdown</a></li>
+                <li class="tag-4"><a href="./tag/algorithm.html">Algorithm</a></li>
+                <li class="tag-4"><a href="./tag/vim.html">vim</a></li>
+                <li class="tag-4"><a href="./tag/pelican.html">pelican</a></li>
+                <li class="tag-1"><a href="./tag/javascript.html">javascript</a></li>
+                <li class="tag-1"><a href="./tag/python.html">python</a></li>
+                <li class="tag-2"><a href="./tag/linux.html">linux</a></li>
+                <li class="tag-2"><a href="./tag/css.html">css</a></li>
+                <li class="tag-2"><a href="./tag/shell.html">shell</a></li>
+                <li class="tag-4"><a href="./tag/jinja.html">jinja</a></li>
+</ul>
+        </div>
+        </aside>
+    <div class="extra">
+                
+            </div>
+
+        </div>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

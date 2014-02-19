@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Aladdin</title>
+        <meta charset="utf-8" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/css" href="/theme/css/home.css"/>
+</head>
+
+<body id="index" class="home">
+        <nav id="menu"><ul>
+            <li><a href="index.html">Aladdin</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
+        <div id=content-wrap>
+<section id="content">
+<div id="post-list">
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./note-of-jinja_doc.html" rel="bookmark" title="Permalink to note of jinja_doc">note of jinja_doc</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2014-01-18 00:00:00</span>
+                    <span class="post-category">读书笔记</span>
+                <!--bug    <span class="post-tags">jinja|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <p>===========</p>
+<h3>to know</h3>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Comparison_of_web_template_engines">Comparison of web template engines</a></li>
+</ul>
+<h3>haven't understand</h3>
+<ul>
+<li>Jinja is both designer and developer friendly by sticking to Python's principles(what principles?) and adding functionality useful for templating environments.</li>
+<li>The most basic way to create a template and render it is through Template,This however is not ...</li></ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./ge-wang-zhan-shi-yong-de-kuang-jia-he-ji-zhu.html" rel="bookmark" title="Permalink to 各网站使用的框架和技术">各网站使用的框架和技术</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-19 00:00:00</span>
+                    <span class="post-category">前端</span>
+                <!--bug    <span class="post-tags"></span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>知乎</h3>
+<ul>
+<li>Tornado 知乎使用这个构建自己的网站</li>
+<li>MySQL 知乎使用这个作为自己的主要的储存，使用 SqlAlchemy 为ORM进行数据库的建模或者映射。</li>
+<li>Redis 使用这个用于缓存、队列、计数或者任务，使用 Redis-Py 为其连接客户端。</li>
+<li><a href="https://developers.google.com/closure/library/?hl=zh-CN&amp;csw=1">Closure</a> 知乎使用Google的Closure Library作为前端的JavaScript 框架，这个大家可以自行抄起家伙查看Javascript代码，或者在其Js源代码里面直接搜索goog，即可看到。</li>
+<li>Nginx 现在可以在HTTP HEADER中直接看到这个。</li>
+<li>以前用到的Upyun，现在已经迁移到知乎自己建的图片服务上。</li>
+<li>知乎的主要语言是Python，其实只要网站用到Python，很多的包或者技术都是可以预测的，比如需要 Virtualenv来解决纯净的包环境问题，需要 Pythonbrew 来切换Python的版本环境（开发环境常用，生产环境很少），需要 使用 Fabric 来加速部署。看看知乎这样的流量，肯定也会有负载均衡啦，硬的就来个牛逼的F5，软的就玩个Nginx或者HAProxy吧。</li>
+<li>参考<a href="http://www.zhihu.com/question/19558038">1</a></li>
+</ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./requirements-analysis-of-personal-blog.html" rel="bookmark" title="Permalink to requirements analysis of personal blog">requirements analysis of personal blog</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-18 00:00:00</span>
+                    <span class="post-category">前端</span>
+                <!--bug    <span class="post-tags"></span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>内容上的</h3>
+<ul>
+<li>todo list
+   列出每周自己的计划，如读书计划，学习计划或其他计划</li>
+</ul>
+<h3>外观上的</h3>
+<h3>定位</h3>
+<ul>
+<li>博客名字</li>
+<li>一句标语</li>
+<li>logo</li>
+</ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./shell-wiki.html" rel="bookmark" title="Permalink to shell wiki">shell wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-18 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">shell|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>shell读取文件的每一行</h3>
+<h2>写法一：</h2>
+<h1>!/bin/bash</h1>
+<p>while read line
+do
+    echo $line
+done &lt; filename(待读取的文件)</p>
+<hr />
+<h2>写法二：</h2>
+<h1>!/bin/bash</h1>
+<p>cat filename(待读取的文件) | while read line
+do
+    echo $line
+done</p>
+<hr />
+<h2>写法三：</h2>
+<p>for line in <code>cat filename(待读取的文件)</code>
+do
+    echo $line
+done</p> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./perceptual-computing.html" rel="bookmark" title="Permalink to perceptual computing">perceptual computing</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-15 00:00:00</span>
+                    <span class="post-category">misc</span>
+                <!--bug    <span class="post-tags"></span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3><a href="http://www.most.gov.cn/tztg/201302/t20130201_99485.htm">国家重点基础研究发展计划和重大科学研究计划2014重要支持方向</a></h3>
+<p>信息科学领域第六项：面向三元空间的感知认知和智能控制
+面向复杂交通系统、公共安全和社会管理等方面的需求，分析网络空间、现实世界和人类认知的三元交互融合；研究人的感知灵敏度和智能处理能力的拓展及集成方法；研究面向三元空间海量感知计算模式，建立认知计算理论，提出基于CPS的聚合协同与人机交互闭环的智能控制方法。研究以互联网为基础的中文信息处理理论与方法。</p> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./deploy-a-static-blog-on-github-page-by-pelican.html" rel="bookmark" title="Permalink to deploy a static blog on github page by pelican">deploy a static blog on github page by pelican</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-10 00:00:00</span>
+                    <span class="post-category">misc</span>
+                <!--bug    <span class="post-tags">pelican|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h3>Why use pelican and github</h3>
+<ul>
+<li>github provides github pages </li>
+<li>pelican can transform md to html </li>
+<li>md is easy to use and peform well</li>
+<li>create theme yourself</li>
+</ul>
+<h3>pelican create static site</h3>
+<ul>
+<li>pelican-quickstart</li>
+<li>pelican content -o output -t template</li>
+<li>cd output;python -m pelican.server</li>
+<li>or you can edit Makefile and use ...</li></ul> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+    <div class="entry-body">
+                <div class="article-frament">
+                <div class="basic_title">
+                <h2 class="entry-title"><a href="./linux-wiki.html" rel="bookmark" title="Permalink to Linux-wiki">Linux-wiki</a></h2> 
+                </div>
+                <div class="post-info">
+                    <span class="post-date">2013-11-10 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                <!--bug    <span class="post-tags">linux|</span>
+               --> 
+                </div><!-- /.post-info -->
+                <div class="entry-content"> <h4>系统时间同步</h4>
+<p>寻找一个网络时间服务器，比如一些国家授时中心
+台警大授时中心(台湾)
+asia.pool.ntp.org
+中科院授时中心(西安)
+210.72.145.44
+执行命令:ntpdate asia.pool.ntp.org;连接210.72.145.44时提示没有这个服务器，不知道为什么</p>
+<h4>想装一个能写注释的pdf阅读软件</h4>
+<p>mupdf 只有看pdf的功能，没有其他任何功能
+xpdf 功能特别少，具丑。
+adobereader 找了半天，下了半天才下下来。没有注释功能，比较慢。要你何用。</p>
+<h3>Linux练级</h3>
+<p>linux软件开发如何入门
+1. 鸟哥的私房菜基础篇。这是学习linux系统的使用。
+2. 服务器篇。可以看些简单的服务器构建：tftp,ftp,nfs ...</p> </div><!-- /.entry-content -->
+                </div>
+                    </div>
+
+</div><!-- /#posts-list -->
+    <ul class="pagination">
+            <li class="prev disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a
+                    href="./index.html">1</a></li>
+            <li class=""><a
+                    href="./index2.html">2</a></li>
+            <li class=""><a
+                    href="./index3.html">3</a></li>
+            <li class=""><a
+                    href="./index4.html">4</a></li>
+            <li class="next"><a
+                    href="./index2.html">&raquo;</a></li>
+    </ul>
+</section><!-- /#content -->
+          <!--add by me -->
+        <aside id="content-side">
+        <div class=sidebarBox id=taglist>
+            <h4>Tag</h4>
+            <ul class="tagcloud">
+                <li class="tag-4"><a href="./tag/markdown.html">markdown</a></li>
+                <li class="tag-4"><a href="./tag/algorithm.html">Algorithm</a></li>
+                <li class="tag-4"><a href="./tag/vim.html">vim</a></li>
+                <li class="tag-4"><a href="./tag/pelican.html">pelican</a></li>
+                <li class="tag-1"><a href="./tag/javascript.html">javascript</a></li>
+                <li class="tag-1"><a href="./tag/python.html">python</a></li>
+                <li class="tag-2"><a href="./tag/linux.html">linux</a></li>
+                <li class="tag-2"><a href="./tag/css.html">css</a></li>
+                <li class="tag-2"><a href="./tag/shell.html">shell</a></li>
+                <li class="tag-4"><a href="./tag/jinja.html">jinja</a></li>
+</ul>
+        </div>
+        </aside>
+    <div class="extra">
+                
+            </div>
+
+        </div>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

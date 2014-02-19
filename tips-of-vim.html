@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Aladdin</title>
+        <meta charset="utf-8" />
+        <!--add by me-->
+        <link rel="stylesheet" type="text/css" href="/theme/css/home.css"/>
+
+
+
+    <meta name="tags" contents="vim" />
+
+</head>
+
+<body id="index" class="home">
+        <nav id="menu"><ul>
+            <li><a href="index.html">Aladdin</a></li>
+            <li><a href="archives.html">archives</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul></nav><!-- /#menu -->
+        <div id=content-wrap>
+<section id="content" class="body">
+        <article class="hentry">
+                <section class="entry-body">
+    <h2 class="entry-title">
+      <a href="./tips-of-vim.html" rel="bookmark"
+         title="Permalink to Tips of vim">Tips of vim</a></h2>
+ 
+                <div class="post-info">
+                    <span class="post-date">2013-09-20 00:00:00</span>
+                    <span class="post-category">wiki</span>
+                    <span class="post-tags">vim</span>
+                </div><!-- /.post-info -->
+  <div class="entry-content">
+    <h3>跳转</h3>
+<ul>
+<li><code>w</code>  跳到下一个字首，按标点或单词分割</li>
+<li><code>W</code>  跳到下一个字首，长跳，如end-of-line被认为是一个</li>
+<li><code>e</code>  跳到下一个字</li>
+<li><code>E</code>  跳到下一个字尾，长跳</li>
+<li><code>b</code>  跳到上一个字</li>
+<li><code>B</code>  跳到上一个字，长跳</li>
+<li><code>0</code>跳转至行首</li>
+<li><code>^</code>跳转至行第一个非空字符</li>
+<li><code>$</code>跳转至行尾</li>
+<li><code>fx</code>在当前行中找x字符，找到了就跳转至x</li>
+<li><code>Fx</code>跟fx的方向相反</li>
+<li><code>*</code>查找光标所在处的单词，向下查找 </li>
+<li><code>*</code>查找光标所在处的单词，向上查找 </li>
+<li><code>[N]G</code>跳到第N行，如0G，就等价于gg，100G就是第100行</li>
+<li><code>ctrl-f</code>上翻一页 </li>
+<li><code>ctrl-b</code>下翻一页 </li>
+<li><code>mx</code>设置书签,x只能是a-z的26个字母,<code>`x</code>跳转到书签处<code>`</code>是左边的键</li>
+<li><code>%</code>跳转到相配对的括号</li>
+<li><code>Ctrl-O</code>跳转到表里较旧的光标位置</li>
+<li><code>Ctrl-I</code>跳转到表里较新的光标位置</li>
+<li><code>''</code>跳转到光标上次停靠的地方,是两个<code>'</code>,而不是一个<code>"</code></li>
+<li><code>{</code>到上一段的开头</li>
+<li><code>}</code>跳到下一段的的开头</li>
+<li><code>(</code>移到这个句子的开头</li>
+<li><code>)</code>移到下一个句子的开头</li>
+<li><code>[[</code>跳转至上一个函数要求代码块中<code>{</code>必须单独占一行</li>
+<li><code>]]</code> 跳转至下一个函数要求代码块中<code>{</code>必须单独占一行</li>
+<li><code>Ctrl-]</code>跳转至函数或变量定义处</li>
+<li><code>gD</code>跳转到局部变量的定义处</li>
+<li><code>H</code>移动光标到当前屏幕上最上边的一行</li>
+<li><code>M</code>移动光标到当前屏幕上中间的一行</li>
+<li><code>L</code>移动光标到当前屏幕上最下边的一行</li>
+</ul>
+<h3>记录宏</h3>
+<ul>
+<li><code>q(x)</code> 开始记录宏,并将结果存入寄存器(x)</li>
+<li><code>q</code> 退出记录模式</li>
+<li><code>@(x)[num]</code> 播放记录在x寄存器中的宏命令,此命令后可跟数字，表示要重复多少次</li>
+</ul>
+<h3>编辑多个文件</h3>
+<p>vim file1 file2 ..
+* <code>nw</code>保存当前文件编辑下一个</p>
+<h3>切换大小写</h3>
+<p><code>~</code>切换大小写，当前字符
+<code>g~iw</code>切换当前字的大小写
+<code>gUiw</code>将当前字变成大写
+<code>guiw</code>将当前字变成小写 </p>
+<h3>缩进</h3>
+<p><code>&gt;&gt;</code>将当前行右移一个单位
+<code>&lt;&lt;</code>将当前行左移一个单位(一个tab符) 
+<code>==</code>自动缩进当前行 </p>
+<h3>折叠</h3>
+<h4>折叠方式</h4>
+<p>可用选项 'foldmethod' 来设定折叠方式：set fdm=<strong>*</strong>。
+有 6 种方法来选定折叠：
+manual  手工定义折叠
+indent  更多的缩进表示更高级别的折叠
+expr    用表达式来定义折叠
+syntax  用语法高亮来定义折叠
+diff对  没有更改的文本进行折叠
+marker  对文中的标志折叠
+注意，每一种折叠方式不兼容，如不能即用expr又用marker方式，我主要轮流使用indent和marker方式进行折叠。
+使用时，用：set fdm=marker 命令来设置成marker折叠方式（fdm是foldmethod的缩写）。
+要使每次打开vim时折叠都生效，则在.vimrc文件中添加设置，如添加：set fdm=syntax，就像添加其它的初始化设置一样。</p>
+<h4>折叠命令</h4>
+<p>选取了折叠方式后，我们就可以对某些代码实施我们需要的折叠了，由于我使用indent和marker稍微多一些，故以它们的使用为例：
+如果使用了indent方式，vim会自动的对大括号的中间部分进行折叠，我们可以直接使用这些现成的折叠成果。
+在可折叠处（大括号中间）：
+zc      折叠
+zC     对所在范围内所有嵌套的折叠点进行折叠 
+zo      展开折叠
+zr      展开所有折叠
+zO     对所在范围内所有嵌套的折叠点展开
+[z       到当前打开的折叠的开始处。
+]z       到当前打开的折叠的末尾处。
+zj       向下移动。到达下一个折叠的开始处。关闭的折叠也被计入。
+zk      向上移动到前一折叠的结束处。关闭的折叠也被计入。</p>
+<p>当使用marker方式时，需要用标计来标识代码的折叠，系统默认是{{{和}}}，最好不要改动之：）
+我们可以使用下面的命令来创建和删除折叠：
+zf      创建折叠，比如在marker方式下：
+zd      删除 (delete) 在光标下的折叠。仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
+zD     循环删除 (Delete) 光标下的折叠，即嵌套删除折叠。
+仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
+zE     除去 (Eliminate) 窗口里“所有”的折叠。
+仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。</p>
+<h3>标签页切换</h3>
+<ul>
+<li><code>tabe fn</code>     在一个新的标签页中编辑文件fn</li>
+<li><code>gt</code>     切换到下一个标签页</li>
+<li><code>gT</code>     切换到上一个标签页</li>
+<li><code>:tabr</code>     切换到第一个标签页</li>
+<li><code>:tabl</code>     切换到最后一个标签页</li>
+</ul>
+<h3>查找替换</h3>
+<ul>
+<li><code>/pattern</code> 向后搜索字符串pattern</li>
+<li><code>n</code> 下一个匹配</li>
+<li><code>N</code> 上一个匹配</li>
+<li><code>:%s/old/new/g</code> 搜索整个文件，将所有的old替换为new</li>
+<li><code>:%s/old/new/gc</code> 搜索整个文件，将所有的old替换为new，每次都要你确认是否替换 </li>
+</ul>
+<h3>复制粘贴</h3>
+<ul>
+<li><code>dd</code>     删除光标所在行</li>
+<li><code>dw</code>     删除一个字(word)</li>
+<li><code>x</code>     删除当前字符</li>
+<li><code>X</code>     删除前一个字符</li>
+<li><code>D</code>     删除到行末</li>
+<li><code>yy</code>     复制一行，此命令前可跟数字，标识复制多行，如6yy，表示从当前行开始复制6行</li>
+<li><code>yw</code>     复制一个字</li>
+<li><code>y$</code>     复制到行末</li>
+<li><code>p</code>     粘贴粘贴板的内容到当前行的下面</li>
+<li><code>P</code>     粘贴粘贴板的内容到当前行的上面</li>
+<li><code>]p</code>     有缩进的粘贴，vim会自动调节代码的缩进</li>
+<li><code>"a</code>     将内容放入/存入a寄存器，可以支持多粘贴板
+附：比如常用的一个寄存器就是系统寄存器，名称为+，所以从系统粘贴板粘贴到vim中的命令为"+p,注意此处的+不表示操作符，二十一个寄存器。
+移动光标</li>
+</ul>
+<h3>可视模式</h3>
+<h4>标记文本</h4>
+<ul>
+<li><code>v</code>     进入可视模式，单字符模式</li>
+<li><code>V</code>     进入可视模式，行模式 </li>
+<li><code>ctrl+v</code>     进入可视模式，列模式，类似于UE的列模式 </li>
+<li><code>o</code>     跳转光标到选中块的另一个端点</li>
+<li><code>O</code>     跳转光标到块的另一个端点</li>
+<li><code>aw</code>     选中一个字</li>
+<li><code>ab</code>     选中括号中的所有内容，包括括号本身</li>
+<li><code>aB</code>     选中{}括号中的所有内容</li>
+<li><code>ib</code>     选中括号中的内容，不含括号</li>
+<li><code>iB</code>     选中{}中的内容，不含{}</li>
+</ul>
+<h4>对标记进行动作</h4>
+<ul>
+<li><code>&gt;</code>     块右移 </li>
+<li><code>&lt;</code>     块左移 </li>
+<li><code>y</code>     复制块 </li>
+<li><code>d</code>     删除块 </li>
+<li><code>~</code>     切换块中内容的大小</li>
+<li><code>U</code>     将选中块中的内容转成大写</li>
+</ul>
+<h3>输入unicode字符</h3>
+<p>输入digraphs（合体字母），输入模式下<code>ctrl-k</code>，输入对应的标准输入的双字符。或输入模式下<code>ctrl-v u字符编号</code>，字符编号可以通过<code>:dig</code>查看 </p>
+<h3>插件</h3>
+<h4>snipmate</h4>
+<p>用途：用来简化一些常用代码块或其它内容块的输入
+安装：插件直接扔到.vim中
+配置：.vimrc 中有<code>filetype plugin on</code>设置即可
+使用：用自带的各种文本格式的snippets，查看其中定义的snippets，可以添加自己喜欢的snippets。也可以添加自定义文本格式的snippets，在ftdetect中添加文本类型的与文本名的对应关系
+备注：在编辑.tex文件的时候发现tex.snippets不起作用，查看了vim文件夹中的filetype.vim文件，发现当文件后缀名为.tex还要根据文本的内容才能作出文件类型的判定，具体还没搞清楚</p>
+<h3>tricks</h3>
+<h4>删除空白行</h4>
+<ul>
+<li>刪除沒有內容的空行:<code>g/^$/d</code></li>
+<li>刪除包含有空格組成的空行:<code>g/^\s*$/d</code></li>
+<li>除以空格或tab開頭到結尾的空行:<code>g/^[ |\t]*$/d</code></li>
+</ul>
+  </div><!-- /.entry-content -->
+    </section>
+</article>
+</section>
+          <!--add by me -->
+        <aside id="content-side">
+        <div class=sidebarBox id=taglist>
+            <h4>Tag</h4>
+            <ul class="tagcloud">
+                <li class="tag-4"><a href="./tag/markdown.html">markdown</a></li>
+                <li class="tag-4"><a href="./tag/algorithm.html">Algorithm</a></li>
+                <li class="tag-4"><a href="./tag/vim.html">vim</a></li>
+                <li class="tag-4"><a href="./tag/pelican.html">pelican</a></li>
+                <li class="tag-1"><a href="./tag/javascript.html">javascript</a></li>
+                <li class="tag-1"><a href="./tag/python.html">python</a></li>
+                <li class="tag-2"><a href="./tag/linux.html">linux</a></li>
+                <li class="tag-2"><a href="./tag/css.html">css</a></li>
+                <li class="tag-2"><a href="./tag/shell.html">shell</a></li>
+                <li class="tag-4"><a href="./tag/jinja.html">jinja</a></li>
+</ul>
+        </div>
+        </aside>
+    <div class="extra">
+                
+            </div>
+
+        </div>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
